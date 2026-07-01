@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  position: relative;
+  border: 1px solid rgba(150, 146, 146, 0.178);
+  height: 80px;
+}
+h1 {
+  color: goldenrod;
+  font-family: cursive;
+  font-size: rem;
+  margin-left: 80px;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 70px;
+  color: white;
+  padding: 7px;
+  border-radius: 20px;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: black;
+  background-color: goldenrod;
+}
+.vetement {
+  background-image: url(../img/bjx1.jpg);
+  height: 40vh;
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product_card {
+  display: flex;
+  background-color: white;
+  padding: 10px 0;
+}
+aside {
+  background-color: white;
+  color: black;
+  padding: 18px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  box-shadow: 10px 20px 30px rgb(10, 19, 10);
+
+}
+aside h2,
+h4 {
+  padding: 10px 0;
+}
+aside button {
+  color: goldenrod;
+  background-color: rgba(218, 165, 32, 0.295);
+  margin: 10px 0;
+  padding: 5px;
+}
+aside li {
+  padding: 10px 2px;
+  list-style: none;
+  font-weight: bold;
+}
+aside a {
+  text-decoration: none;
+  color: black;
+}
+aside a:hover{
+  background-color: goldenrod;
+  border-radius: 10px;
+  padding: 4px;
+}
+.color span {
+  cursor: pointer;
+}
+.price_1 {
+  display: flex;
+  justify-content: space-between;
+}
+/* pour la section article */
+article {
+  background-color: white;
+  width: 86%;
+  padding: 20px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  margin-left: 40px;
+  box-shadow: 10px 20px 30px rgb(10, 19, 10);
+}
+.choix {
+  padding: 0 10px;
+  position: relative;
+}
+.choix h4 {
+  color: black;
+  position: absolute;
+  left: 40em;
+  top: -10px;
+}
+.choix button,
+select {
+  margin: 10px;
+  padding: 2px;
+  margin-left: 8%;
+}
+.choix_1 span,
+h6 {
+  color: black;
+  font-size: 20px;
+}
+.choix_1 {
+  display: flex;
+}
+.card_1 {
+  flex-direction: column;
+  margin: 10px 0 0 -20px;
+  position: relative;
+  left: 10em;
+}
+.card_1 .favori {
+  position: absolute;
+  cursor: alias;
+  bottom: 93%;
+  right: 22%;
+}
+.card_1 img {
+  width: 80%;
+  height: 60%;
+  max-width: 300px;
+  border: 10px SOLID rgb(243, 235, 235);
+}
+
+.choix_2 {
+  display: flex;
+  margin: 0 0;
+}
+.choix_2 h6,
+span {
+  color: black;
+  font-size: 20px;
+}
+.card_2 {
+  flex-direction: column;
+  margin: 10px 0 0 -20px;
+  left: 10em;
+  bottom: 5em;
+  position: relative;
+}
+.card_2 img {
+  width: 80%;
+  height: 60%;
+  max-width: 300px;
+  border: 10px SOLID rgb(243, 235, 235);
+}
+
+.card_2 .favori {
+  position: absolute;
+  cursor: alias;
+  bottom: 93%;
+  right: 22%;
+}
+.price {
+  margin-left: 70px;
+}
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination span{
+  margin: 20px;
+  border: 1px solid black;
+padding: 10px;
+}
+.pagination span:first-child, .pagination span:last-child{
+  border: none;
+  font-weight: bold;
+  font-size: 40px;
+  color: rgba(218, 165, 32, 0.691);
+}

@@ -24,27 +24,21 @@ h1 {
   font-size: rem;
   margin-left: 80px;
 }
-.titre img {
-  position: relative;
-  width: 5%;
-  left: 100px;
-}
+
 nav a {
   text-decoration: none;
+  font-weight: bold;
   margin-left: 70px;
   color: white;
-  top: 20%;
+  padding: 7px;
+  border-radius: 20px;
 }
-nav a:hover{
+nav a:hover {
   text-decoration: underline;
-  color: goldenrod;
+  color: black;
+  background-color:goldenrod
 }
-.outils {
-  margin-right: 40px;
-}
-.outils span {
-  margin: 15px;
-}
+
 /* pour la section description*/
 .description {
   height: 100vh;
@@ -84,14 +78,11 @@ nav a:hover{
   position: absolute;
   top: 60%;
 }
-.logo {
-  width: 20%;
-  margin-left: 50rem;
-}
+
 /*pour la section des nouveautes*/
 .categories {
   width: 100%;
-
+height: 100%;
   display: flex;
   padding: 01px;
   background-color: white;
@@ -100,7 +91,8 @@ nav a:hover{
 }
 .categories img {
   height: 100%;
-  width: 18vw;
+  width: 100%;
+  max-width: 249px;
   margin: 10px;
   border-radius: 2px;
   object-fit: cover;
@@ -108,7 +100,6 @@ nav a:hover{
 }
 .div1 {
   position: relative;
-  height: 79%;
 }
 .donnee {
   background: rgba(0, 0, 0, 0.452);
@@ -123,13 +114,14 @@ nav a:hover{
 /*pour la section Nouveaute*/
 .nouveaute {
   width: 100%;
-  height: 500px;
+  height: 100%;
   background-color: white;
   border-radius: 15px;
 }
-h2 {
+ .nouveaute h2 {
   color: black;
   text-align: center;
+  margin-top:20px;
 }
 
 .div_princ {
@@ -143,14 +135,17 @@ h2 {
   flex-direction: column;
   align-items: center;
 }
-.div2 img {
-  height: 100%;
-  width: 18vw;
-  object-fit: cover;
-  margin: 0;
-  border-radius: 2px;
-  box-shadow: 0 8px 20px rgba(218, 165, 32, 0.991);
+.div2 img {.logo {
+  width: 20%;
+  margin-left: 50rem;
+}
+   height: 100%;
+  width: 100%;
+  max-width: 249px;
   margin: 10px;
+  border-radius: 2px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(218, 165, 32, 0.991);
 }
 .div2 p {
   margin-top: 8px;
@@ -179,7 +174,9 @@ h2 {
 .collect_popul {
   background-color: white;
   position: relative;
-  padding: 10px;
+  padding: 10.5px;
+  height: 100%;
+  width: 100%;
 }
 .collect_popul h2 {
   color: black;
@@ -187,18 +184,17 @@ h2 {
   position: absolute;
   left: 40%;
 }
-.collect_popul button{
+.collect_popul button {
   background-color: white;
   color: goldenrod;
   border: 1px solid goldenrod;
-  height: 30px;
-  padding: 5px;
-  position: absolute;
+  padding: 10px;
+  position: relative;
   left: 45%;
-  bottom: 2%;
+  bottom: 0.2%;
   background-color: black;
 }
-.collect_popul a{
+.collect_popul a {
   text-decoration: none;
   color: goldenrod;
 }
@@ -210,9 +206,10 @@ h2 {
 }
 .populaire img {
   height: 100%;
-  width: 18vw;
+  width: 100%;
+  max-width: 246px;
   margin: 10px;
-    box-shadow: 0 8px 20px rgba(218, 165, 32, 0.991);
+  box-shadow: 0 8px 20px rgba(218, 165, 32, 0.991);
   border-radius: 2px;
   object-fit: cover;
 }
@@ -223,96 +220,91 @@ footer {
   gap: 20px;
   padding: 20px;
 }
-.presentation{
-
-}
-.presentation h2{
-  color:gold;
+.presentation h2 {
+  color: gold;
   font-size: 20px;
-  margin-right:70px ;
-  
+  margin-right: 70px;
 }
-.presentation p{
+.presentation p {
   margin-top: 20px;
 }
-.shop{
+.shop {
   padding: 0 60px;
 }
-.shop h2{
-color: white;
+.shop h2 {
+  color: white;
   font-size: 20px;
   margin-bottom: 20px;
   padding: 0 20px;
 }
-.shop ul{
-  
+.shop ul {
   list-style: none;
   padding: 10px 20px;
 }
-.shop a{
+.shop a {
   text-decoration: none;
 }
-.shop a:hover{
+.shop a:hover {
   text-decoration: underline;
   color: white;
 }
-.news h2{
+.news h2 {
   color: white;
   font-size: 20px;
   margin-bottom: 20px;
 }
-.news ul{
-  
+.news ul {
   list-style: none;
   padding: 10px 20px;
 }
-.shop li{
+.shop li {
   margin-bottom: 10px;
 }
-.news a{
+.news a {
   text-decoration: none;
 }
-.news a:hover{
+.news a:hover {
   text-decoration: underline;
   color: white;
 }
-.news li{
+.news li {
   margin-bottom: 10px;
 }
-.account{
+.account {
   padding: 0 20px;
 }
-.account h2{
+.account h2 {
   color: white;
   font-size: 20px;
   margin-bottom: 20px;
 }
-.account ul{
-  
+.account ul {
   list-style: none;
   padding: 10px 20px;
 }
-.account li{
+.account li {
   margin-bottom: 10px;
 }
-.account a{
+.account a {
   text-decoration: none;
 }
-.account a:hover{
+.account a:hover {
   text-decoration: underline;
   color: white;
 }
-.letter{
-padding:0 60px;
+.letter {
+  padding: 30px 80px;
+  border: 1px solid rgba(255, 255, 255, 0.164);
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px goldenrod;
 }
-.letter h2{
+.letter h2 {
   color: white;
   font-size: 20px;
   padding: 0 20px;
   margin-bottom: 15px;
-  
 }
-.letter input{
+.letter input {
   margin: 10px;
   background-color: black;
   color: white;
@@ -320,7 +312,7 @@ padding:0 60px;
   height: 40px;
   padding: 2px;
 }
-.letter button{
+.letter button {
   background-color: goldenrod;
   width: 100%;
   height: 40px;
@@ -340,5 +332,163 @@ padding:0 60px;
 .signature a {
   color: white;
   text-decoration: none;
-
 }
+svg{
+  width: 40px;
+  height:40px ;
+  background-color: white;
+  border-radius: 50px;
+  padding: 5px;
+  position: relative;
+  top: 20px;
+}
+ @media screen and (max-width: 960px) {
+  body{
+  
+  }
+  nav{
+     display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2px;
+  position: relative;
+  }
+  h1 {
+  color: goldenrod;
+  font-family: cursive;
+  font-size: rem;
+  margin-left: 10px;
+}
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 15px;
+  color: white;
+  padding: 2px;
+  border-radius: 20px;
+}
+.description {
+  height: 100vh;
+  color: white;
+  background-image: url(../img/logo.jpg), url(../img/bjx1.jpg);
+  background-size: 25%, 90%;
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    right center,
+    left center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 0px;
+  position: relative;
+}
+.description h2 {
+  font-size: 4rem;
+  line-height: 1.2;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 25%;
+}
+.description p {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  color: white;
+  position: absolute;
+  top: 25px;
+}
+.description button {
+  background-color: gold;
+  height: 40px;
+  width: 14rem;
+  margin-top: 50px;
+  position: absolute;
+  top: 60%;
+}
+.categories {
+  width:100%;
+height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 01px;
+  background-color: white;
+  border-radius: 14px;
+  flex-wrap: wrap;
+}
+.categories img {
+  height: 95%;
+  width: 100%;
+  max-width: 249px;
+  margin: 10px;
+  border-radius: 2px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(218, 165, 32, 0.991);
+}
+/* pour la section nouveaute */
+.politique h2 {
+  color: white;
+  font-size: 12px;
+}
+.collect_popul {
+  background-color: white;
+  position: relative;
+  padding: 40px;
+  height: 100%;
+  width: 100%;
+}
+.collect_popul h2 {
+  color: black;
+  text-align: center;
+  position: absolute;
+  top: 0.1%;
+  margin-left: -30%;
+  }
+  .collect_popul button {
+  background-color: white;
+  color: goldenrod;
+  border: 1px solid goldenrod;
+  padding: 10px;
+  position: relative;
+  left: 10%;
+  top: 10px;
+  background-color: black;
+}
+.populaire {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  margin-top: 20px;
+}
+.populaire img {
+  height: 100%;
+  width: 100%;
+  max-width: 246px;
+  margin: 10px;
+  box-shadow: 0 8px 20px rgba(218, 165, 32, 0.991);
+  border-radius: 2px;
+  object-fit: cover;
+}
+.presentation{
+  margin-left: 100px;
+}
+.presentation h2{
+  text-decoration: underline;
+}
+.presentation p{
+  font-size: 20px;
+}
+.shop{
+  margin: 25px  0 0 40px;
+}
+.shop h2{
+  text-decoration: underline;
+}
+.shop a{
+  color: white;
+  font-size: 20px;
+}
+.news h
+}
+
+
